@@ -1,7 +1,6 @@
 package com.ivoovi.Parcijalni.Ispit3.service;
 
 import com.ivoovi.Parcijalni.Ispit3.DTO.PolaznikDTO;
-import com.ivoovi.Parcijalni.Ispit3.model.Polaznik;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.ivoovi.Parcijalni.Ispit3.model;
+package com.ivoovi.Parcijalni.Ispit3.domain;
 
 import com.ivoovi.Parcijalni.Ispit3.DTO.ProgramObrazovanjaDTO;
 import jakarta.persistence.*;
@@ -25,6 +25,10 @@ public class ProgramObrazovanja {
     @Column(name = "csvet")
     @NotNull
     private long CSVET;
+
+    @ManyToOne
+    @JoinColumn(name = "upis_id")
+    private Upis upis;
 
     public ProgramObrazovanja(ProgramObrazovanjaDTO programObrazovanjaDTO) {
         this.naziv = programObrazovanjaDTO.getNaziv();

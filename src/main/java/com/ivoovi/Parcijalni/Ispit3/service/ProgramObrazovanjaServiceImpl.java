@@ -1,7 +1,7 @@
 package com.ivoovi.Parcijalni.Ispit3.service;
 
 import com.ivoovi.Parcijalni.Ispit3.DTO.ProgramObrazovanjaDTO;
-import com.ivoovi.Parcijalni.Ispit3.model.ProgramObrazovanja;
+import com.ivoovi.Parcijalni.Ispit3.domain.ProgramObrazovanja;
 import com.ivoovi.Parcijalni.Ispit3.repository.ProgramObrazovanjaRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

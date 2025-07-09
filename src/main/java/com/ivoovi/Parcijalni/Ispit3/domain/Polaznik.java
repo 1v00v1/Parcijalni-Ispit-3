@@ -1,4 +1,4 @@
-package com.ivoovi.Parcijalni.Ispit3.model;
+package com.ivoovi.Parcijalni.Ispit3.domain;
 
 import com.ivoovi.Parcijalni.Ispit3.DTO.PolaznikDTO;
 import jakarta.persistence.*;
@@ -26,6 +26,10 @@ public class Polaznik {
     @Column(name = "prezime")
     @NotNull
     private String prezime;
+
+    @ManyToOne
+    @JoinColumn(name = "upis_id")
+    private Upis upis;
 
 public Polaznik(PolaznikDTO polaznikDTO) {
     this.ime = polaznikDTO.getIme();

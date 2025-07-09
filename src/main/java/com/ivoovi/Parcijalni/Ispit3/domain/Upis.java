@@ -1,4 +1,4 @@
-package com.ivoovi.Parcijalni.Ispit3.model;
+package com.ivoovi.Parcijalni.Ispit3.domain;
 
 import com.ivoovi.Parcijalni.Ispit3.DTO.UpisDTO;
 import jakarta.persistence.*;
@@ -26,6 +26,14 @@ public class Upis {
     @Column(name = "PO_id")
     @NotNull
    private long ProgramObrazovanjaID;
+
+    @ManyToOne
+    @JoinColumn(name = "polaznik_id")
+    private Polaznik polaznik;
+
+    @ManyToOne
+    @JoinColumn(name = "PO_id")
+    private ProgramObrazovanja ProgramObrazovanja;
 
     public Upis(UpisDTO upisDTO){
         this.polaznikID = upisDTO.getPolaznikID();

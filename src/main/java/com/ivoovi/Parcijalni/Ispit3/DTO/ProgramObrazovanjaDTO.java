@@ -1,7 +1,7 @@
 package com.ivoovi.Parcijalni.Ispit3.DTO;
 
 
-import com.ivoovi.Parcijalni.Ispit3.model.ProgramObrazovanja;
+import com.ivoovi.Parcijalni.Ispit3.domain.ProgramObrazovanja;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

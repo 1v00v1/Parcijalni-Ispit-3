@@ -1,7 +1,7 @@
 package com.ivoovi.Parcijalni.Ispit3.service;
 
 import com.ivoovi.Parcijalni.Ispit3.DTO.PolaznikDTO;
-import com.ivoovi.Parcijalni.Ispit3.model.Polaznik;
+import com.ivoovi.Parcijalni.Ispit3.domain.Polaznik;
 import com.ivoovi.Parcijalni.Ispit3.repository.PolaznikRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

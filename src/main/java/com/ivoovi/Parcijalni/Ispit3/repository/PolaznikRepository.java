@@ -1,6 +1,6 @@
 package com.ivoovi.Parcijalni.Ispit3.repository;
 
-import com.ivoovi.Parcijalni.Ispit3.model.Polaznik;
+import com.ivoovi.Parcijalni.Ispit3.domain.Polaznik;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import org.springframework.stereotype.Repository;
