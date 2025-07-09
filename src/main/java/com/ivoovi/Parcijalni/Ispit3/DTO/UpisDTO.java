@@ -14,7 +14,7 @@ public class UpisDTO {
     private long ProgramObrazovanjaID;
 
     public UpisDTO(Upis upis) {
-        this.polaznikID = upis.getPolaznikID();
-        this.ProgramObrazovanjaID = upis.getProgramObrazovanjaID();
+        this.polaznikID = upis.getPolaznik().getId();
+        this.ProgramObrazovanjaID = upis.getProgramObrazovanja().getId();
     }
 }

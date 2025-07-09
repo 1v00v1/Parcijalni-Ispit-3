@@ -39,7 +39,7 @@ public class SecurityConfig {
                 .cors(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests((authorize) -> authorize
                         .requestMatchers("/auth/api/v1/login", "/auth/api/v1/refreshToken").permitAll()
-                        .requestMatchers("/api/v1/**", "/web-shop**", "/web-shop/**").authenticated())
+                        .requestMatchers("/api/v1/**", "/polaznik**", "/polaznik/**","/po**", "/po/**").authenticated())
                 .sessionManagement((session) -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProvider())
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
